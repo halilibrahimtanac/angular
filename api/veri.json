@@ -1,0 +1,39 @@
+{
+  "product": [
+    {
+      "name": "iPhone 13 Pro Max",
+      "brand": "Apple",
+      "price": "17999",
+      "category": "Electronic",
+      "id": 6
+    },
+    {
+      "name": "Onur",
+      "brand": "Şeref",
+      "price": "0.01",
+      "category": "Beauty",
+      "id": 7
+    },
+    {
+      "name": "Laptop",
+      "brand": "Apple",
+      "price": "4000",
+      "category": "Electronic",
+      "id": 8
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Electronic"
+    },
+    {
+      "id": 2,
+      "name": "Beauty"
+    },
+    {
+      "id": 3,
+      "name": "Kitchen"
+    }
+  ]
+}

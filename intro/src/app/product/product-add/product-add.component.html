@@ -1,0 +1,31 @@
+<h3>Yeni Ürün Kaydı</h3>
+  <form #productAddForm="ngForm" (ngSubmit)="addProduct(productAddForm)">
+     <div class="form-group">
+     <input type="text" #name="ngModel" [(ngModel)]="model.name" class="form-control" name="name" placeholder="Ürün ismi..." required>
+     <div *ngIf="name.invalid&&name.dirty">Boş bırakılamaz</div>
+     </div>
+     <br />
+
+     <div class="form-group">
+     <input type="text" #brand="ngModel" [(ngModel)]="model.brand" class="form-control" name="brand" placeholder="Markası..." required>
+     <div *ngIf="brand.invalid&&brand.dirty">Boş bırakılamaz</div>
+     </div>
+     <br />
+
+     <div class="form-group">
+     <input type="text" #price="ngModel" [(ngModel)]="model.price" class="form-control" name="price" placeholder="Fiyatı..." required>
+     <div *ngIf="price.invalid&&price.dirty">Boş bırakılamaz</div>
+     </div>
+     <br />
+
+
+     <div class="form-group">
+     <select #category="ngModel" [(ngModel)]="model.category" name="category" class="form-control" required>
+        <option *ngFor="let category of categories" [value]="category.name">{{ category.name }}</option>
+     </select>
+     <div *ngIf="category.invalid&&category.touched">Boş bırakılamaz</div>
+     <br />
+
+     <button type="submit" class="btn btn-primary">Ekle</button>
+     </div>
+  </form>
